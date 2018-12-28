@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36bab3b3">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+                    <RelativeLayout
+                        android:layout_width="346dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#FFFFFF">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/meja" />
+                        <TextView
+                            android:layout_toRightOf="@id/img1"
+                            android:layout_width="210dp"
+                            android:layout_height="128dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="13dp"
+                            android:text="Jongkok dan berlindung di bawah perabotan rumah, misalnya meja yang stabil."
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="170dp">
+                    <RelativeLayout
+                        android:layout_width="339dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#FFFFFF">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/mirror" />
+                        <TextView
+                            android:layout_toRightOf="@id/img2"
+                            android:layout_width="210dp"
+                            android:layout_height="128dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="13dp"
+                            android:text="Jauhi benda terbuat dari kaca yang dapat runtuh dan pecah."
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="340dp">
+                    <RelativeLayout
+                        android:layout_width="339dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#FFFFFF">
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bed" />
+                        <TextView
+                            android:layout_toRightOf="@id/img3"
+                            android:layout_width="210dp"
+                            android:layout_height="128dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="13dp"
+                            android:text="Tetap tinggal di tempat tidur jika anda ada di kamar saat gempa. Lindungi wajah dan kepala dengan bantal."
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="510dp">
+                    <RelativeLayout
+                        android:layout_width="339dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#FFFFFF">
+
+                        <ImageView
+                            android:id="@+id/img5"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/pintu" />
+                        <TextView
+                            android:layout_toRightOf="@id/img5"
+                            android:layout_width="210dp"
+                            android:layout_height="128dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="13dp"
+                            android:text="Jangan melewati pintu, kecuali anda yakin pintu disangga rangka yang kuat."
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="680dp">
+                    <RelativeLayout
+                        android:layout_width="339dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#FFFFFF">
+
+                        <ImageView
+                            android:id="@+id/img6"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/ic_homes" />
+                        <TextView
+                            android:layout_toRightOf="@id/img6"
+                            android:layout_width="210dp"
+                            android:layout_height="128dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="13dp"
+                            android:text="Tetap tinggal di dalam bangunan, baik rumah, kantor, apartemen, sampai goncangan gempa berhenti dan aman menuju keluar."
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="850dp">
+                    <RelativeLayout
+                        android:layout_width="339dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#FFFFFF">
+
+                        <ImageView
+                            android:id="@+id/img7"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/stairs" />
+                        <TextView
+                            android:layout_toRightOf="@id/img7"
+                            android:layout_width="210dp"
+                            android:layout_height="128dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="13dp"
+                            android:text="Jangan gunakan lift. Lebih baik gunakan tangga."
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="1020dp">
+                    <RelativeLayout
+                        android:layout_width="339dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#FFFFFF">
+
+                        <ImageView
+                            android:id="@+id/img8"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/ic_listrik" />
+                        <TextView
+                            android:layout_toRightOf="@id/img8"
+                            android:layout_width="210dp"
+                            android:layout_height="128dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="13dp"
+                            android:text="Hati-hati dengan listrik yang mungkin padam atau sistem pemadam kebakaran di gedung yang mungkin berfungsi secara otomatis."
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"></RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sigabe.sigabe">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.LOCATION_GPS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/API_key" />
+
+        <activity android:name=".Login.LoginActivity"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp.SignUp"
+            tools:ignore="InnerclassSeparator">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Emergency.Profile" />
+        <activity android:name=".Emergency.EmergencyCall"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Emergency.MapsActivity" android:label="@string/title_activity_maps"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Contact" />
+        <activity android:name=".Content.ContentBanjirTab"
+            tools:ignore="InnerclassSeparator"></activity>
+        <activity android:name=".Content.ContentBakarTab"
+            tools:ignore="InnerclassSeparator"></activity>
+        <activity android:name=".Content.ContentGempaTab" ></activity>
+        <activity android:name=".Content.ContentJatuh"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Content.DashboardContent"
+            tools:ignore="InnerclassSeparator" />
+        <service android:name=".Emergency.BackgroundService"
+            tools:ignore="InnerclassSeparator" />
+        <receiver android:name=".Emergency.BootReceiver"
+            tools:ignore="InnerclassSeparator">
+            <!-- <intent-filter> -->
+            <!-- <action android:name="com.sigabe.sigabe" /> -->
+            <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+            <!-- </intent-filter> -->
+        </receiver>
+
+        <activity android:name=".Sidebar" />
+        <activity
+            android:name=".Content.SurvivalDashboardTab"
+            android:label="@string/title_activity_survival_dashboard_tab"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="InnerclassSeparator">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

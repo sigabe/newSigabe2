@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <resources>
+        <style android:name="">
+            <item android:name="android:fontFamily">Kanit</item>
+            <item android:name="android:textColor">#FF47525E</item>
+            <item android:name="android:textSize">45sp</item>
+            <item android:name="android:lineSpacingMultiplier">1.3</item>
+        </style>
+    </resources>
+</selector>
