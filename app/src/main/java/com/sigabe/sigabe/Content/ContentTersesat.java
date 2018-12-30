@@ -9,13 +9,13 @@ import android.view.ViewGroup;
 
 import com.sigabe.sigabe.R;
 
-public class ContentJatuh extends android.support.v4.app.Fragment {
-    private static final String TAG = "ContentJatuh";
+public class ContentTersesat extends android.support.v4.app.Fragment {
+    private static final String TAG = "ContentTersesat";
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.activity_content_jatuh, container, false);
+        View view = inflater.inflate(R.layout.activity_content_tersesat, container, false);
         return view;
     }
 }

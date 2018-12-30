@@ -41,7 +41,7 @@
             android:layout_below="@+id/textView2"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
-            android:text="Banjir adalah peristiwa yang terjadi ketika aliran air berlebihan yang merendam daratan"
+            android:text="Kebakaran hutan terjadi akibat musim kemarau panjang. Dan juga disebabkan oleh aktivitas vulkanis."
             android:textSize="16dp" />
     </RelativeLayout>
 

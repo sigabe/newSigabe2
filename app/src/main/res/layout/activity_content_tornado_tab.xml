@@ -6,9 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Content.SurvivalDashboardTab">
-
-
+    tools:context=".Content.ContentTornadoTab">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,7 +20,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="48dp"
             android:background="@drawable/round"
-            android:src="@drawable/ic_gempa" />
+            android:src="@drawable/ic_tornado" />
 
         <TextView
             android:id="@+id/textView2"
@@ -31,7 +29,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="152dp"
-            android:text="Gempa"
+            android:text="Tornado"
             android:textStyle="bold"
             android:textSize="24dp" />
 
@@ -42,7 +40,7 @@
             android:layout_below="@+id/textView2"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
-            android:text="Gempa bumi adalah getaran yang terjadi di permukaan bumi akibat pelepasan energi dari dalam."
+            android:text="Tornado adalah sebuah kolom udara yang berputar kencang dan menyatu dengan tanah."
             android:textSize="16dp" />
     </RelativeLayout>
 

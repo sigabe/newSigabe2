@@ -5,10 +5,7 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".Content.SurvivalDashboardTab">
-
-
+    tools:context=".Content.ContentJatuhTab">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,7 +19,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="48dp"
             android:background="@drawable/round"
-            android:src="@drawable/ic_gempa" />
+            android:src="@drawable/ic_jatuh" />
 
         <TextView
             android:id="@+id/textView2"
@@ -31,7 +28,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="152dp"
-            android:text="Gempa"
+            android:text="Jatuh Dari Motor"
             android:textStyle="bold"
             android:textSize="24dp" />
 
@@ -42,7 +39,7 @@
             android:layout_below="@+id/textView2"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
-            android:text="Gempa bumi adalah getaran yang terjadi di permukaan bumi akibat pelepasan energi dari dalam."
+            android:text="Peristiwa sosial yang sering terjadi akibat pengendara yang melamun saat berkendara."
             android:textSize="16dp" />
     </RelativeLayout>
 
@@ -67,5 +64,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-
 </android.support.design.widget.CoordinatorLayout>

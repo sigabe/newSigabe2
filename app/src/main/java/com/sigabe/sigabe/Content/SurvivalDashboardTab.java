@@ -29,7 +29,7 @@ public class SurvivalDashboardTab extends AppCompatActivity {
     private SectionsPageAdapter mSectionsPageAdapter;
     private ViewPager mViewPager;
 
-    private final int[] tabIcons = {R.drawable.ic_kebakaran, R.drawable.ic_lari};
+    //private final int[] tabIcons = {R.drawable.ic_kebakaran, R.drawable.ic_lari};
     TabLayout tabLayout;
 
     @Override
@@ -46,13 +46,13 @@ public class SurvivalDashboardTab extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-        setupTabIcons();
+        //setupTabIcons();
     }
 
-    private void setupTabIcons() {
-        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
-        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
-    }
+   // private void setupTabIcons() {
+      // tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+       // tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+    //}
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());

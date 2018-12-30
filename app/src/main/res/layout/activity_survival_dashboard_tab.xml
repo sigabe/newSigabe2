@@ -18,15 +18,14 @@
             android:id="@+id/r1"
             android:layout_width="match_parent"
             android:layout_height="63dp"
-            android:background="@drawable/rectangle">
+            android:background="#FFFFFF">
 
             <TextView
                 android:layout_width="175dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:text="Survive Content"
-                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:text="Daftar Bencana"
+                android:textColor="#000000"
                 android:textSize="23sp"
                 android:textStyle="bold" />
         </RelativeLayout>

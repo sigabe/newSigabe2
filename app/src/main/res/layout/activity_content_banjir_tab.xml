@@ -42,7 +42,7 @@
             android:layout_below="@+id/textView2"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
-            android:text="Banjir adalah peristiwa yang terjadi ketika aliran air berlebihan yang merendam daratan"
+            android:text="Banjir adalah peristiwa yang terjadi ketika aliran air berlebihan yang merendam daratan."
             android:textSize="16dp" />
     </RelativeLayout>
 

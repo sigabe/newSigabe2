@@ -4,275 +4,295 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Emergency.EmergencyCall">
-
+    tools:context=".Emergency.EmergencyCall"
+    android:background="#FFFFFF">
     <RelativeLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@drawable/rectangle">
+        android:layout_height="63dp"
+        android:background="#FFFFFF">
         <TextView
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_centerInParent="true"
             android:text="Emergency Call"
-            android:textColor="#FFFFFF"
-            android:textSize="29sp"
-            android:textStyle="bold"/>
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
     </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="80dp">
+        android:layout_below="@+id/layout1">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <RelativeLayout
-                android:layout_width="381dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:background="#30599dfc">
-
-                <TextView
-                    android:layout_width="50dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:text="A-B"
-                    android:textColor="#000000"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="70dp"
-                    android:layout_height="5dp"
-                    android:layout_marginTop="35dp"
-                    android:background="#000000" />
-
-                <ImageButton
-                    android:id="@+id/btnAmbulan"
-                    android:layout_width="70dp"
-                    android:layout_height="68dp"
-                    android:layout_above="@+id/txt1"
-                    android:layout_alignStart="@+id/txt1"
-                    android:layout_marginBottom="-120dp"
-                    android:background="@drawable/ambulan" />
-
-                <TextView
-                    android:id="@+id/txt1"
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="120dp"
-                    android:text="Ambulan"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
-
-                <ImageButton
-                    android:id="@+id/btnBansos"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="55dp"
-                    android:layout_toRightOf="@id/btnAmbulan"
-                    android:background="@drawable/bansos" />
-
-                <TextView
-                    android:id="@+id/txtsos"
-                    android:layout_width="70dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="120dp"
-                    android:layout_toRightOf="@id/txt1"
-                    android:text="Bansos"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
-
-                <ImageButton
-                    android:id="@+id/btnBasarnas"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="55dp"
-                    android:layout_toRightOf="@id/btnBansos"
-                    android:background="@drawable/basarnas" />
-
-                <TextView
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp">
+                <RelativeLayout
+                    android:id="@+id/rr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="#28bab3b3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/rr1"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="120dp"
-                    android:layout_toRightOf="@id/txtsos"
-                    android:text="Basarnas"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnAmbulan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ambulan"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
             </RelativeLayout>
-
             <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="165dp"
-                android:layout_marginTop="152dp"
-                android:background="#29c10af9">
-
-                <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:text="K-P"
-                    android:textColor="#000000"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="65dp"
-                    android:layout_height="5dp"
-                    android:layout_marginTop="35dp"
-                    android:background="#000000" />
-
-                <ImageButton
-                    android:id="@+id/btnKomnas"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="55dp"
-                    android:background="@drawable/komnas" />
-
-                <TextView
-                    android:id="@+id/txt2"
+                android:id="@+id/r2"
+                android:layout_below="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp">
+                <RelativeLayout
+                    android:id="@+id/rr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="#28bab3b3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v1"
+                    android:layout_below="@+id/rr2"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="120dp"
-                    android:text="Komnas HAM"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
-
-                <ImageButton
-                    android:id="@+id/btnPemadam"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="70dp"
-                    android:layout_toRightOf="@id/btnKomnas"
-                    android:background="@drawable/damkar" />
-
-                <TextView
-                    android:id="@+id/txtpem"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnBansos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bansos"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v2"
+                    android:layout_below="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#0d000000"
+                    android:layout_marginTop="6dp">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v3"
+                    android:layout_below="@+id/v2"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="120dp"
-                    android:layout_toRightOf="@id/txt2"
-                    android:text="Pemadam"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
-
-                <ImageButton
-                    android:id="@+id/btnPLN"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_alignStart="@+id/btnPemadam"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="110dp"
-                    android:background="@drawable/pln" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="120dp"
-                    android:layout_toRightOf="@id/txtpem"
-                    android:text="PLN"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnBasarnas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Basarnas"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
             </RelativeLayout>
-
             <RelativeLayout
-                android:layout_width="381dp"
-                android:layout_height="165dp"
-                android:layout_marginTop="320dp"
-                android:background="#30599dfc">
-
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:text="P"
-                    android:textColor="#000000"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="50dp"
-                    android:layout_height="5dp"
-                    android:layout_marginTop="35dp"
-                    android:background="#000000" />
-
-                <ImageButton
-                    android:id="@+id/btnPMI"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="55dp"
-                    android:background="@drawable/pmi" />
-
-                <TextView
+                android:id="@+id/r3"
+                android:layout_below="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp">
+                <RelativeLayout
+                    android:id="@+id/rr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="#28bab3b3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="K"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/rr3"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="45dp"
-                    android:layout_marginTop="120dp"
-                    android:text="PMI"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
-
-                <ImageButton
-                    android:id="@+id/btnPolisi"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="138dp"
-                    android:background="@drawable/polri" />
-
-                <TextView
-                    android:id="@+id/txtpolisi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/btnPMI"
-                    android:layout_marginStart="147dp"
-                    android:text="Polisi"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
-
-                <ImageButton
-                    android:id="@+id/btnposkoben"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="48dp"
-                    android:background="@drawable/posko" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="27dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_below="@+id/btnPMI"
-                    android:layout_marginEnd="17dp"
-                    android:text="Posko Bencana"
-                    android:textColor="#000000"
-                    android:textSize="18dp" />
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnKomnas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Komnas HAM"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
             </RelativeLayout>
-
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_below="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="259dp">
+                <RelativeLayout
+                    android:id="@+id/rr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="#28bab3b3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v5"
+                    android:layout_below="@+id/rr4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnPemadam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pemadam Kebakaran"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v6"
+                    android:layout_below="@+id/v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#0d000000"
+                    android:layout_marginTop="6dp">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v7"
+                    android:layout_below="@+id/v6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnPLN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PLN"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v8"
+                    android:layout_below="@+id/v7"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#0d000000"
+                    android:layout_marginTop="6dp">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v9"
+                    android:layout_below="@+id/v8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnPMI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PMI"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v10"
+                    android:layout_below="@+id/v9"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#0d000000"
+                    android:layout_marginTop="6dp">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v11"
+                    android:layout_below="@+id/v10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnPolisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Polisi"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v12"
+                    android:layout_below="@+id/v11"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#0d000000"
+                    android:layout_marginTop="6dp">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/v13"
+                    android:layout_below="@+id/v12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnposkoben"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Posko Bencana"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="21sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
-
 </RelativeLayout>

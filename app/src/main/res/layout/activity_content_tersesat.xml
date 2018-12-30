@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Content.ContentTersesat"
     android:background="#FFFFFF">
     <ScrollView
         android:layout_width="match_parent"
@@ -13,7 +14,7 @@
             android:layout_height="match_parent">
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="98dp">
+                android:layout_height="117dp">
                 <TextView
                     android:id="@+id/no1"
                     android:layout_width="30dp"
@@ -30,25 +31,25 @@
                     android:layout_height="85dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="15dp"
-                    android:background="@drawable/ic_sepatu" />
+                    android:background="@drawable/ic_barang" />
                 <TextView
                     android:layout_toRightOf="@id/img1"
                     android:layout_width="210dp"
-                    android:layout_height="73dp"
+                    android:layout_height="100dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="17dp"
                     android:layout_marginRight="10dp"
-                    android:text="Kenakan pelindung kaki untuk melindungi kaki dari puing."
+                    android:text="Jangan panik, berpikirlah dengan tenang. Duduklah sejenak agar kamu bisa berpikir dengan baik."
                     android:textSize="18sp"
                     android:textStyle="normal"
                     android:textColor="#000000"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:layout_marginTop="110dp">
+                android:layout_height="125dp"
+                android:layout_marginTop="135dp">
                 <TextView
                     android:id="@+id/no2"
                     android:layout_width="30dp"
@@ -63,24 +64,24 @@
                     android:layout_width="85dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="15dp"
-                    android:background="@drawable/ic_lari" />
+                    android:background="@drawable/lup" />
                 <TextView
                     android:layout_toRightOf="@id/img2"
                     android:layout_width="210dp"
-                    android:layout_height="73dp"
+                    android:layout_height="100dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginLeft="17dp"
                     android:layout_marginRight="10dp"
-                    android:text="Segera evakuasi anak-anak, wanita dan manula ke tempat aman."
+                    android:text="Lihatlah kondisi sekitar dari jalur, kondisi logistik, kondisi para pendaki, serta arah mata angin."
                     android:textSize="18sp"
                     android:textStyle="normal"
                     android:textColor="#000000"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:layout_marginTop="210dp">
+                android:layout_height="100dp"
+                android:layout_marginTop="252dp">
                 <TextView
                     android:id="@+id/no3"
                     android:layout_width="30dp"
@@ -95,16 +96,16 @@
                     android:layout_width="85dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="15dp"
-                    android:background="@drawable/lup" />
+                    android:background="@drawable/ic_jalandaki" />
                 <TextView
                     android:layout_toRightOf="@id/img3"
                     android:layout_width="210dp"
-                    android:layout_height="52dp"
+                    android:layout_height="93dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginLeft="17dp"
                     android:layout_marginRight="10dp"
-                    android:text="Periksa benda yang berisiko menimbulkan api."
+                    android:text="Jika memungkinkan, cobalah untuk melanjutkan perjalanan ke bagian atas gunung."
                     android:textSize="18sp"
                     android:textStyle="normal"
                     android:textColor="#000000"/>
@@ -112,7 +113,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="315dp">
+                android:layout_marginTop="365dp">
                 <TextView
                     android:id="@+id/no4"
                     android:layout_width="30dp"
@@ -127,16 +128,16 @@
                     android:layout_width="85dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="15dp"
-                    android:background="@drawable/ic_listrik" />
+                    android:background="@drawable/fire" />
                 <TextView
                     android:layout_toRightOf="@id/img5"
                     android:layout_width="210dp"
-                    android:layout_height="69dp"
+                    android:layout_height="95dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginLeft="17dp"
                     android:layout_marginRight="10dp"
-                    android:text="Hindari jaringan listrik yang rubuh atau kabel terbuka."
+                    android:text="Jika tidak memungkinkan, cobalah membuat tanda SOS dengan menggunakan api."
                     android:textSize="18sp"
                     android:textStyle="normal"
                     android:textColor="#000000"/>
