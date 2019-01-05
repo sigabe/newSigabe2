@@ -15,9 +15,9 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logogambar"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_sigabe_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
@@ -28,21 +28,10 @@
         <activity
             android:name=".Login.LoginActivity"
             tools:ignore="InnerclassSeparator">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SignUp.SignUp"
             tools:ignore="InnerclassSeparator">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-
         </activity>
         <activity
             android:name=".MainActivity"
@@ -51,14 +40,23 @@
             android:name=".SplashScreen"
             android:label="@string/app_name"
             android:noHistory="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Dashboard" />
-        <activity android:name=".Emergency.Profile" />
+        <activity android:name=".Profile" />
         <activity
             android:name=".Emergency.EmergencyCall"
             tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".Emergency.MapsActivity"
+            android:label="@string/title_activity_maps"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Emergency.MainActivityTrack"
             android:label="@string/title_activity_maps"
             tools:ignore="InnerclassSeparator" />
         <activity android:name=".Contact" />
@@ -77,27 +75,12 @@
             android:name=".Emergency.BackgroundService"
             tools:ignore="InnerclassSeparator" />
 
-        <receiver
-            android:name=".Emergency.BootReceiver"
-            tools:ignore="InnerclassSeparator">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="com.sigabe.sigabe" /> -->
-            <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
-            <!-- </intent-filter> -->
-        </receiver>
-
         <activity android:name=".Sidebar" />
         <activity
             android:name=".Content.SurvivalDashboardTab"
             android:label="@string/title_activity_survival_dashboard_tab"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             tools:ignore="InnerclassSeparator">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".Content.ContentJatuhTab" />
         <activity android:name=".Content.ContentTornado" />

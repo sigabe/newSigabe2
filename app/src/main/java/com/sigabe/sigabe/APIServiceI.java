@@ -1,6 +1,7 @@
 package com.sigabe.sigabe;
 
 import com.sigabe.sigabe.Login.LoginResponse;
+import com.sigabe.sigabe.SignUp.SignUpResponse;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -12,7 +13,7 @@ public interface APIServiceI {
 
     @FormUrlEncoded
     @POST("rest-auth/registration/")
-    Call<ResponseBody> createUser(
+    Call<SignUpResponse> createUser(
             @Field("email") String email,
             @Field("username") String username,
             @Field("password1") String password1,
@@ -20,10 +21,19 @@ public interface APIServiceI {
     );
 
     @FormUrlEncoded
-    @POST("rest-auth/login/")
+    @POST("rest-auth/login/?format=json")
     Call<LoginResponse> loginUser(
             @Field("username") String username,
+            @Field("email") String email,
             @Field("password") String password
+    );
+
+
+    @POST("tracks/")
+    @FormUrlEncoded
+    Call<ResponseBody> tracksFriend(
+            @Field("longitude") String longitude,
+            @Field("latitude") String latitude
     );
 
 }

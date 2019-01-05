@@ -39,7 +39,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         ShowPass1 = findViewById(R.id.showPass1);
         ShowPass2 = findViewById(R.id.showPass2);
         findViewById(R.id.signUp).setOnClickListener(this);
-        findViewById(R.id.txt).setOnClickListener(this);
+        findViewById(R.id.txtLogin).setOnClickListener(this);
         ShowPass1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
@@ -114,26 +114,23 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         }
 
 
-        Call<ResponseBody> call = SignUpClient
+        Call<SignUpResponse> call = SignUpClient
                 .getInstance()
                 .getApi()
                 .createUser(email, username, password1, password2);
 
-        call.enqueue(new Callback<ResponseBody>() {
+        call.enqueue(new Callback<SignUpResponse>() {
             @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                try{
-                    String s = response.body().string();
-                    Toast.makeText(SignUp.this, "Register Success", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(SignUp.this, LoginActivity.class);
-                    startActivity(intent);
-                }catch (IOException e) {
-                    e.printStackTrace();
-                }
+            public void onResponse(Call<SignUpResponse> call, Response<SignUpResponse> response) {
+                //String s = response.body().string();
+                SignUpResponse s = response.body();
+                Toast.makeText(SignUp.this, "Register Success", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(SignUp.this, LoginActivity.class);
+                startActivity(intent);
             }
 
             @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
+            public void onFailure(Call<SignUpResponse> call, Throwable t) {
                     Toast.makeText(SignUp.this,"Register Failed" , Toast.LENGTH_LONG).show();
                     //t.getMessage()
             }
@@ -147,7 +144,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
             case R.id.signUp:
                 userSignUp();
                 break;
-            case R.id.txt:
+            case R.id.txtLogin:
                 Intent intent = new Intent(SignUp.this, LoginActivity.class);
                 startActivity(intent);
                 break;
