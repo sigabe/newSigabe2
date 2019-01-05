@@ -23,10 +23,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    private EditText etPassword, etUsername;
+    private EditText etPassword, etUsername, etEmail;
     private CheckBox ShowPass;
     APIServiceI mApiService;
-    //    ProgressDialog loading;
     Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,18 +34,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         etPassword = findViewById(R.id.textPassword);
         etUsername = findViewById(R.id.textUser);
+        etEmail = findViewById(R.id.textEmail);
         ShowPass = findViewById(R.id.showPass);
         findViewById(R.id.signIn).setOnClickListener(this);
         mContext = this;
         mApiService = LoginClient.getInstance().getApi(); // meng-init yang ada di package apihelper
 
-//        Login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Login.this, MainActivity.class);
-//                startActivity(intent);
-//            }
-//        });
         ShowPass.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
@@ -64,6 +57,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void userLogin(){
         String password = etPassword.getText().toString().trim();
         String username = etUsername.getText().toString().trim();
+        String email = etUsername.getText().toString().trim();
 
         if(password.isEmpty()){
             etPassword.setError("Password required");
@@ -82,18 +76,25 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return;
         }
 
+        if(email.isEmpty()){
+            etEmail.setError("Username required");
+            etEmail.requestFocus();
+            return;
+        }
+
         Call<LoginResponse> call = LoginClient
                 .getInstance()
                 .getApi()
-                .loginUser(username, password);
+                .loginUser(username,email,password);
 
         call.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
-                String token = response.body().getAuth();
+               // String login = String.valueOf(response.body());
+                LoginResponse login = response.body();
                 Intent i = new Intent(LoginActivity.this, MainActivity.class);
-                Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_LONG).show();
-                i.putExtra("TOKEN_STRING", token);
+                Toast.makeText(LoginActivity.this, "Login Success" , Toast.LENGTH_LONG).show();
+                //Toast.makeText(LoginActivity.this, "Login Success" + login.getKey() , Toast.LENGTH_LONG).show();
                 startActivity(i);
             }
 

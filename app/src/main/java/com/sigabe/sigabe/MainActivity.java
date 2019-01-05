@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.sigabe.sigabe.Emergency.EmergencyCall;
-import com.sigabe.sigabe.Emergency.Profile;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 

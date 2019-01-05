@@ -1,4 +1,4 @@
-package com.sigabe.sigabe.Emergency;
+package com.sigabe.sigabe;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
