@@ -106,7 +106,8 @@
         <activity android:name=".Content.ContentTersesat" />
         <activity android:name=".Content.ContentBegal" />
         <activity android:name=".Content.ContentTersesatTab" />
-        <activity android:name=".Content.ContentBegalTab"></activity>
+        <activity android:name=".Content.ContentBegalTab" />
+        <activity android:name=".FormAddFriend"></activity>
     </application>
 
 </manifest>

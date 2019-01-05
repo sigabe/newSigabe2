@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormAddFriend"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="#FFFFFF">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add Friend"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_below="@id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#28bab3b3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Username"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/layout2"
+        android:background="@drawable/round"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="43dp">
+        <EditText
+            android:id="@+id/textAdd"
+            android:layout_width="230dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:hint="username" />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/lup"
+            android:layout_toRightOf="@id/textAdd"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>
